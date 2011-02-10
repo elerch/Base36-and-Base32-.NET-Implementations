@@ -1,0 +1,13 @@
+Base36 and Base32 Implementations for .NET
+
+The Base36 implementation is nearly identical (and based from) http://www.codeproject.com/KB/cs/base36.aspx
+
+However, Base36 is somewhat broken, as I, O, and L and look like ones and zeros.  Also, with U in the character set, 
+profanity can show up in certain numbers.  
+
+With that in mind, Base32 was implemented in roughly the specifications of Douglas Crockford's design: http://www.crockford.com/wrmg/base32.html
+
+This implementation does not implement the checksum functionality, although it will successfully ignore checksum characters.
+
+All projects target the 2.0 framework for maximum compatibility.
+
